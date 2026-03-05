@@ -3,37 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的视频演示</title>
+    <title>视频展示</title>
     <style>
-        /* 让视频居中，并在背景加一点灰色，看起来更专业 */
         body { 
-            display: flex; 
-            flex-direction: column;
-            justify-content: center; 
-            align-items: center; 
-            min-height: 100vh; 
-            background-color: #f8f9fa; 
-            margin: 0; 
-            font-family: sans-serif;
+            display: flex; flex-direction: column; justify-content: center; align-items: center; 
+            min-height: 100vh; background-color: #000; margin: 0; color: #fff; font-family: sans-serif;
         }
-        h2 { color: #333; margin-bottom: 20px; }
+        h2 { margin-bottom: 20px; font-weight: 300; }
         video { 
             max-width: 90%; 
-            width: 800px; 
-            border-radius: 12px; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
-            background: #000;
+            height: 80vh; /* 针对竖屏优化，高度占屏幕80% */
+            border-radius: 15px; 
+            box-shadow: 0 0 20px rgba(255,255,255,0.1); 
         }
     </style>
 </head>
 <body>
-
-    <h2>实例视频演示</h2>
-
+    <h2>实例演示</h2>
     <video controls autoplay muted playsinline>
-        <source src="示例视频.mp4" type="video/mp4">
-        您的浏览器不支持 HTML5 视频播放。
+        <source src="shilishipin.mp4" type="video/mp4">
+        您的浏览器不支持播放该视频。
     </video>
-
 </body>
 </html>
